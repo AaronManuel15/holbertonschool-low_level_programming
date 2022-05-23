@@ -2,7 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Task 0 to display properties of random number
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int n;
