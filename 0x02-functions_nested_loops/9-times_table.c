@@ -24,8 +24,8 @@ for (i = 0; i <= 9; i++)
 		else
 		{
 		_putchar('0' + (k / 10));
-		_putchar('0' + (k % 10));
 		}
+		_putchar('0' + (k % 10));
 	}
 	_putchar('\n');
 }
