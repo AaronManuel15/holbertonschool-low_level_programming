@@ -7,7 +7,7 @@
  * Return: 0 (Successful)
  *
  */
-int print_last_digit(int n);
+int print_last_digit(int n)
 {	
 	n = n % 10;
 	if (n < 0)
