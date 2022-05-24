@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - Task 4 program returns character case
+ * _isalpha - Task 4 program returns character case
  *
  * @c: Input from user or program
  *
