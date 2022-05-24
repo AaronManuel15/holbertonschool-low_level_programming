@@ -19,7 +19,7 @@ for (i = 0; i <= 9; i++)
 		_putchar(',');
 		_putchar(' ');
 		k = i * j;
-		if (j <= 9)
+		if (k <= 9)
 		_putchar(' ');
 		else
 		{
