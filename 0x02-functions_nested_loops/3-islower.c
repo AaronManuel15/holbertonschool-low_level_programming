@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * _islower - Task 3 program that checks if the character is lowercase
+ * _islower - Task 3 program checks if character is lowercase
+ *
+ * @c: Input from user or program
  *
  * Return: 0 (Successful)
  *
