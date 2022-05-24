@@ -1,11 +1,10 @@
 #include "main.h"
-/*
- * main - Task 0 program the prints _putchar
+/**
+ * main - Task 0 program that prints _putchar
  *
  * Return: 0 (Successful)
  *
  */
-
 int main(void)
 {
 	char c[] = "_putchar\n";
