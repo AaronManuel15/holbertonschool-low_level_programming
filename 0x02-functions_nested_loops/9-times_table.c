@@ -13,9 +13,9 @@ int k;
 
 for (i = 0; i <= 9; i++)
 {
-	for (j = 0; j <= 9; j++)
+	_putchar('0');
+	for (j = 1; j <= 9; j++)
 	{
-		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
 		k = i * j;
@@ -27,5 +27,5 @@ for (i = 0; i <= 9; i++)
 		_putchar('0' + (k % 10));
 		}
 	}
-	_putchar('\n'); }
+	_putchar('\n');
 }
