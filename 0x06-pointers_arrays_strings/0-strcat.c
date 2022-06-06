@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strcpy - Task 0
+ * _strcat - Task 0
  *
  * @dest: destination that string is getting appended to
  * @src: string to be copied
