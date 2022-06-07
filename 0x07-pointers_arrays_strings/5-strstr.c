@@ -19,22 +19,21 @@ char *_strstr(char *haystack, char *needle)
 
 	if (*b == 0)
 	{
-		return (char *) haystack;
+		return (haystack);
 	}
 
 	for ( ; *haystack != 0; haystack++)
 	{
 		if (*haystack != *b)
-			{
-				continue;
-			}
-
+		{
+			continue;
+		}
 		a = haystack;
 		while (1)
 		{
 			if (*b == 0)
 			{
-				return (char *) haystack;
+				return (haystack);
 			}
 			if (*a++ != *b++)
 			{
