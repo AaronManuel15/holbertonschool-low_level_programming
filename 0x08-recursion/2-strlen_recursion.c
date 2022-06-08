@@ -4,7 +4,7 @@
 /**
  * _strlen_recursion - Task 2
  *
- *@s: string given for length 
+ *@s: string given for length
  *
  * Return: int
  */
