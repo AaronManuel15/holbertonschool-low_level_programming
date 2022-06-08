@@ -33,6 +33,11 @@ int is_prime_number(int n)
 {
 	int turnout;
 
+	if (n <= 1)
+	{
+		return (0);
+	}
+
 	turnout = primechecker(n, n / 2);
 
 	return (turnout);
