@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * _print_chessboard - Task 6
+ * print_chessboard - Task 6
  *
  *@a: array that holds chessboard values.
  *
