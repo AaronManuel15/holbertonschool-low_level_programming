@@ -18,21 +18,19 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 		return (1);
-	} else
+	}
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		j = 0;
+		for (; argv[i][j]; j++)
 		{
-			j = 0;
-			for (; argv[i][j]; j++)
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
-				if (argv[i][j] < '0' || argv[i][j] > '9')
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
-			sum += atoi(argv[i]);
 		}
+		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
