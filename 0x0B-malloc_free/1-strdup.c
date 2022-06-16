@@ -4,7 +4,7 @@
  * _strdup - Task 1
  *
  * @str: string to be duplicated
- * 
+ *
  *
  * Return: NULL if str = NULL,
  */
