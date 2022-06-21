@@ -10,8 +10,11 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *concatstr;
+	char *concatstr, *junk;
 	size_t i, j;
+
+	junk = malloc(5);
+	free(junk);
 
 	if (s1 == NULL)
 		s1 = "";
