@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   *_calloc - Task 2: rebuilding calloc
-  *@nmemb: number of elements 
+  *@nmemb: number of elements
   *@size: element size in bytes
   *
   *
