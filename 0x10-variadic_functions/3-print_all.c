@@ -81,7 +81,7 @@ void print_all(const char * const format, ...)
 	while (format[i] != '\0' && format != NULL)
 	{
 		j = 0;
-		while (printtypes[j].format != NULL)
+		while (j < 4)
 		{
 			if (*printtypes[j].format == format[i])
 			{
