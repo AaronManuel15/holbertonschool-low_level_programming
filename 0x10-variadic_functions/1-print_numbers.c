@@ -4,6 +4,7 @@
 /**
  * print_numbers - Task 1: prints numbers, followed by newline
  *
+ * @separator: given separator to be printed between arguments
  * @n: number of arguments
  * Return: void
  */
