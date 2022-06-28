@@ -36,7 +36,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		strref = va_arg(ap, char *);
 		if (strref != NULL)
-			printf("%s",strref);
+			printf("%s", strref);
 		else
 			printf("(nil)");
 	}
