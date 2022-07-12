@@ -1,4 +1,5 @@
 #include "lists.h"
+#include "2-add_nodeint.c"
 
 /**
  * insert_nodeint_at_index - inserts a new node at the idx position
@@ -14,6 +15,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *temp, *newNode;
 	unsigned int count = 0;
 
+	if (idx == 0)
+	{
+		add_nodeint(head, n);
+		return (*head);
+	}
 	temp = *head;
 	while (count < idx - 1)
 	{
