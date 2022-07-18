@@ -22,10 +22,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buff = malloc(sizeof(char) * letters);
 	if (buff == NULL)
 	{
-		free(buff);
-		exit(1);
+		close(fd);
+		return (0);
 	}
 	length = read(fd, buff, letters);
+	close(fd);
 	if (length < 0)
 	{
 		free(buff);
