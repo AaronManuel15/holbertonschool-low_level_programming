@@ -26,28 +26,32 @@ int main(void)
     char *buffer = NULL, *token, **cmd;
     size_t bufsize = 0;
     pid_t childcheck;
-    int i = 0, status;
+    int i, status;
 
     while (1)
     {
         printf("($) ");
         getline(&buffer, &bufsize, stdin);
         if (strcmp(buffer, "exit\n") == 0)
-            break;
-        if (strlen(buffer) > 1)
+        {
+            free(buffer);
+            return (0);
+        }
+        if (bufsize > 1)
         {
             cmd = malloc(sizeof(*cmd) * delimcount(buffer));
             token = strtok(buffer, " ");
+            i = 0;
             while (token != NULL)
             {
                 cmd[i] = token;
                 token = strtok(NULL, " ");
                 i++;
             }
+            cmd[i] = NULL;
             childcheck = fork();
             if (childcheck == 0)
             {
-                printf("this is a dumby child\n");
                 if (execve(cmd[0], cmd, NULL) == -1)
                 {
                     printf("Child failed\n");
@@ -57,7 +61,10 @@ int main(void)
             wait(&status);
             free(cmd);
         }
+        printf("%s\n", buffer);
+        free(buffer);
+        buffer = NULL;
+        bufsize = 0;
     }
-    free(buffer);
     return (1);
 }
