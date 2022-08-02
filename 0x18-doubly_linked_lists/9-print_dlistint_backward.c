@@ -13,6 +13,9 @@ size_t print_dlistint_backward(const dlistint_t *h)
 	const dlistint_t *surferPtr = h;
 	int nodeCount = 0;
 
+	if (!h)
+		return (nodeCount);
+
 	while (surferPtr->next != NULL)
 		surferPtr = surferPtr->next;
 
