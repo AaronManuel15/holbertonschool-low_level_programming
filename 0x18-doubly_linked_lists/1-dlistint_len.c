@@ -12,9 +12,6 @@ size_t dlistint_len(const dlistint_t *h)
 {
 	unsigned long int nodeCount = 0;
 
-	while (h->prev)
-		h = h->prev;
-
 	while (h)
 	{
 		h = h->next;
