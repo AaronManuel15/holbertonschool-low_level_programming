@@ -40,7 +40,6 @@ int binary_chop(int *array, size_t low, size_t high, int value)
 	{
 		int mid = low + (high - low) / 2;
 
-		if (high - low > 0)
 		printArray(array, low, high);
 		if (array[mid] == value)
 			return (mid);
