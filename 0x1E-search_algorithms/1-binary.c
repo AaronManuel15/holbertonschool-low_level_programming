@@ -36,7 +36,7 @@ void printArray(int *array, size_t low, size_t high)
  */
 int binary_chop(int *array, size_t low, size_t high, int value)
 {
-	if (high >= low)
+	if (high >= low && array)
 	{
 		int mid = low + (high - low) / 2;
 
